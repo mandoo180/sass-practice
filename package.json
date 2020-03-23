@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "live-server public/index.html",
-    "compile:sass": "node-sass -w src/sass/main.scss public/style.css"
+    "start": "live-server",
+    "compile:sass": "node-sass -w src/sass/main.scss css/style.css"
   },
   "keywords": [],
   "author": "",
