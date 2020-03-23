@@ -30,4 +30,9 @@
     background-color: $color-white;
     color: $color-gray-dark-1;
   }
+
+  &--animated {
+    animation: toAppear 3s ease-out 1s;
+    animation-fill-mode: backwards;
+  }
 }
