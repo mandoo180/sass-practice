@@ -7,6 +7,30 @@
     <title>Design</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" name="navi-checkbox" id="navi-toggle" class="navigation__checkbox" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>01</span>About Weird</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>02</span>Our communities</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>03</span>Shop</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span>Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header margin-bottom-big">
       <div class="header__logo-box">
         <h1 class="header__logo">Weird</h1>
@@ -19,105 +43,173 @@
         <a href="#" class="btn btn--white btn--animated">Browse our shop</a>
       </div>
     </header>
-  </body>
 
-  <main>
-    <section class="section-events">
-      <div class="center-text margin-bottom-big">
-        <h2 class="heading-secondary">Upcoming Events</h2>
+    <main>
+      <section class="section-events">
+        <div class="center-text margin-bottom-big">
+          <h2 class="heading-secondary">Upcoming Events</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1">
+                    Lorem ipsum dolor sit amet
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>5 new items</li>
+                    <li>50% discount for the first 5</li>
+                    <li>Buy one get one</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem, ipsum dolor</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-1">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$102</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2">
+                    Lorem ipsum dolor sit amet
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>5 new items</li>
+                    <li>50% discount for the first 5</li>
+                    <li>Buy one get one</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem, ipsum dolor</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$203</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3">
+                    Lorem ipsum dolor sit amet
+                  </span>
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>5 new items</li>
+                    <li>50% discount for the first 5</li>
+                    <li>Buy one get one</li>
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Lorem, ipsum dolor</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">Only</p>
+                    <p class="card__price-value">$297</p>
+                  </div>
+                  <a href="#popup" class="btn btn--white">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sign-up">
+        <div class="row">
+          <div class="sign-up">
+            <div class="sign-up__form">
+              <div class="margin-bottom-medium">
+                <h3 class="heading-secondary">
+                  Join Now
+                </h3>
+              </div>
+              <form action="#" class="form">
+                <div class="form__group">
+                  <input type="text" class="form__input" id="name" name="name" placeholder="Your name" autocomplete="off" required />
+                  <label for="name" class="form__label">Your name</label>
+                </div>
+                <div class="form__group">
+                  <input type="email" class="form__input" id="email" name="email" placeholder="Your email" autocomplete="off" required />
+                  <label for="email" class="form__label">Your email</label>
+                </div>
+                <div class="form__group">
+                  <button class="btn btn--white">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer footer__logo-box">
+        <h1 class="footer__logo">Weird</h1>
       </div>
       <div class="row">
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--1">
-                  Lorem ipsum dolor sit amet
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>5 new items</li>
-                  <li>50% discount for the first 5</li>
-                  <li>Buy one get one</li>
-                  <li>Lorem ipsum dolor sit</li>
-                  <li>Lorem, ipsum dolor</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-1">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$102</p>
-                </div>
-                <a href="#" class="btn btn--white">Shop Now</a>
-              </div>
-            </div>
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Career</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
+              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2">
-                  Lorem ipsum dolor sit amet
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>5 new items</li>
-                  <li>50% discount for the first 5</li>
-                  <li>Buy one get one</li>
-                  <li>Lorem ipsum dolor sit</li>
-                  <li>Lorem, ipsum dolor</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-2">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$203</p>
-                </div>
-                <a href="#" class="btn btn--white">Shop Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--3">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3">
-                  Lorem ipsum dolor sit amet
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>5 new items</li>
-                  <li>50% discount for the first 5</li>
-                  <li>Buy one get one</li>
-                  <li>Lorem ipsum dolor sit</li>
-                  <li>Lorem, ipsum dolor</li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-3">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only">Only</p>
-                  <p class="card__price-value">$297</p>
-                </div>
-                <a href="#" class="btn btn--white">Shop Now</a>
-              </div>
-            </div>
-          </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Support our <a href="#" class="footer__link">shop</a>
+            Copyright &copy; Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed eveniet dolorem, illo, id voluptatibus ad deleniti nemo, dolorum sapiente provident voluptates nam ut. Animi molestias eligendi quam blanditiis, commodi mollitia?
+          </p>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
+    <div id="popup" class="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="./images/image-classic-4.jpg" alt="Nature photo" class="popup__img" />
+          <img src="./images/image-classic-5.jpg" alt="Nature photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">Lorem ipsum &ndash; dolor sit amet, consectetur adipisicing elit.</h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis similique, possimus placeat sunt, voluptatibus modi debitis architecto fuga molestias quidem veniam deserunt exercitationem a, iste rem aspernatur rerum reprehenderit consequatur?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam magnam beatae consectetur adipisicing elit. Adipisci nesciunt quod eaque placeat autem? Atque earum totam dolores ducimus rem velit nostrum repudiandae aut, unde suscipit est sequi consequatur voluptas eveniet ipsa. Aliquid voluptas inventore soluta ex quis natus ea.
+          </p>
+          <a href="#" class="btn btn--white">Book now</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
